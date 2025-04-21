@@ -100,7 +100,7 @@ nav ul ul li a {
   text-align: center;
   padding: 120px 0 60px;
   text-transform: uppercase;
-  font-size: 28px;
+  font-size: 30px;
   word-spacing: 5px;
 }
 
@@ -116,12 +116,12 @@ nav ul ul li a {
 
 .section-content .section-subtitle {
   text-align: center;
-  font-size: 22px;
+  font-size: 25px;
 }
 
 .section-content .event {
   text-align: center;
-  font-size: 20px;
+  font-size: 21px;
 }
 
 
@@ -135,7 +135,14 @@ nav ul ul li a {
 .LEO-image  {
   height: 350px;
   width: 600px;
-  margin-bottom:   75px;
+  margin-bottom: 85px;
+}
+
+.NTHS-image {
+  margin-bottom: 85px;
+}
+.SKILLS-image {
+  margin-bottom: 85px;
 }
 
 /* Image Slider Styling */
@@ -150,6 +157,17 @@ nav ul ul li a {
 .slider-wrapper .evidence-list .LEO-image {
   object-fit: cover;
   flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.slider-wrapper .evidence-list .NTHS-image {
+  object-fit: cover;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.slider-wrapper .evidence-list .SKILLS-image {
+  object-fit: cover;
   scroll-snap-align: start;
 }
 
@@ -170,12 +188,51 @@ nav ul ul li a {
 }
 
 .slider-container .slider-wrapper {
-  max-width: 715px;
+  max-width: 720px;
   width: 100%;
   align-items:  center;
   justify-content:  center;
 }
 
+/* NTHS Slider Container */
+.nthsS1-slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.nthsS1-slider-container .slider-wrapper {
+  max-width: 720px;
+  width: 100%;
+  align-items:  center;
+  justify-content:  center;
+}
+.nthsS2-slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.nthsS2-slider-container .slider-wrapper {
+  max-width: 600px;
+  width: 100%;
+  align-items:  center;
+  justify-content:  center;
+}
+
+/* SkillsUSA Slider Container */
+.skills-slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.skills-slider-container .slider-wrapper {
+  max-width: 475px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
 /* Image Slider Buttons */
 .slider-wrapper .slide-button {
   position: absolute;
@@ -204,89 +261,3 @@ nav ul ul li a {
 .slider-wrapper .slide-button#next-slide {
   right: -60px;
 } 
-
-@media all and (max-width: 968px) {
-  nav ul {
-    margin-right: 0px;
-    float: left;
-  }
-  nav .logo {
-    padding-left: 30px; 
-    width: 100%;
-  }
-  nav ul li, nav ul ul li {
-    display: block;
-    width: 100%;
-  }
-  nav ul li a {
-    cursor: pointer;
-    color: white;
-    font-size: 18px;
-  }
-
-  nav ul ul {
-    top: 70px;
-    position: static;
-    border-top: none;
-    float: none;
-    display: none;
-    opacity: 1;
-    visibility: visible;
-  }
-
-  nav ul ul li {
-    border-bottom: 0px;
-  }
-
-  nav ul ul a {
-    padding-left: 40px;
-  }
-
-  .show {
-    display: block;
-    color: white;
-    font-size: 18px;
-    padding: 0 20px;
-    line-height: 70px;
-    cursor: pointer;
-  }
-  .show:hover {
-    color: #E5CEDC;
-  }
-  .icon {
-    display: block;
-    color: white;
-    position: absolute;
-    right: 40px;
-    line-height: 70px;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  nav ul li a:hover {
-    box-shadow: none;
-    color: #E5CEDC;
-
-  }
-  .show + a, ul {
-    display: none;
-  }
-  [id^=btn]:checked + ul {
-    display: block;
-  }
-
-  /* Image Media Query */
-  .slider-wrapper .slide-button#prev-slide {
-    left: -10px;
-    display: none;
-  } 
-  .slider-wrapper .slide-button#next-slide {
-    right: -10px;
-  } 
-
-  .LEO-image  {
-  height: 350px;
-  width: 500px;
-  margin-bottom:   75px;
-}
-
-}

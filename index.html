@@ -1,39 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="script.js" defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
 
-	<!-- Linking Font Awesome for Icons -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-	<title>Electronic Portfolio</title>
+    <!-- Linking Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Electronic Portfolio</title>
 </head>
 <body>
-	<header>
-		<nav>
-        	<div class="logo">🦆</div>
-        	<label for="btn" class="icon">
-        		<span class="fa fa-bars"></span>
-        	</label>
-        	<input type="checkbox" id="btn">
-        	<ul>
-        		<li><a href="index.html">Home</a></li>
+    <header>
+        <nav>
+            <div class="logo">🦆</div>
+            <label for="btn" class="icon">
+                <span class="fa fa-bars"></span>
+            </label>
+            <input type="checkbox" id="btn">
+            <ul>
+                <li>
+                    <label for="btn-1" class="show">Home +</label>
+                    <a href="index.html">Home</a>
+                    <input type="checkbox" id="btn-1">
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Personal Statement</a></li>      
+                        <li><a href="#">Goal & Objectives</a></li>   
+                        <li><a href="#">Resume</a></li>
+                    </ul>
+                </li>
 
-        		<li>
-        			<label for="btn-2" class="show">Extracurriculars +</label>     		
-        			<a href="#">Extracurriculars</a>
-        			<input type="checkbox" id="btn-2">
-        			<ul>
-        				<li><a href="#">Clubs</a></li>
-        				<li><a href="service.html">Community Service</a></li>
-        				<li><a href="#">Other Activities</a></li>
-        			</ul>
-        		</li>
-        		<li><a href="#">WBL</a></li>
-        	</ul>
-       	</nav>
+                <li>
+                    <label for="btn-2" class="show">Extracurriculars +</label>          
+                    <a href="#">Extracurriculars</a>
+                    <input type="checkbox" id="btn-2">
+                    <ul>
+                        <li><a href="clubs.html">Clubs</a></li>
+                        <li><a href="service.html">Community Service</a></li>
+                        <li><a href="#">Other Activities</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">WBL</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <!-- Portfolio Section -->
@@ -53,7 +63,7 @@
         <section class="about-section">
             <div class="section-content">
                 <div class="about-image-wrapper">
-                    <img src="Portfolio Photos/MePhoto1.jpg" alt="About" class="about-image">
+                    <img src="C:\Users\angel\OneDrive\Desktop\Angelina Pao [CODE]\School Projects\Electronic Portfolio\Portfolio Photos\MePhoto1.jpg" alt="About" class="about-image">
                 </div>
                 <div class="about-details">
                     <h2 class="section-title">Angelina Alcantra-Pao</h2>
@@ -63,8 +73,8 @@
 
                     <p class="text">My focus after high school would be a major in Human Computer-Interaction/Human-Centered Computing. A major that studies and designs how humans interact with technology, aiming to create user-friendly and efficient systems. It's either that or Electrical and Computer Engineering, with a minor in Machine Learning or GIS</p>
                     <div class="contact-list">
-                    	<a href="#" class="contact-link"><i class="fa-solid fa-phone"></i></a>
-                    	<a href="#" class="contact-link"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="#" class="contact-link"><i class="fa-solid fa-phone"></i></a>
+                        <a href="#" class="contact-link"><i class="fa-solid fa-envelope"></i></a>
                     </div>
                 </div>
             </div>
