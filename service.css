@@ -126,15 +126,28 @@ nav ul ul li a {
 
 
 /* Community Service Section Styling */
-.service-section {
+.LEO-section {
+  min-height: 100vh;
+  background-color: #EFE6EC;
+  padding: 50px 0 100px;
+}
+.NTHS-section {
+  min-height: 100vh;
+  background-color: #EFE6EC;
+  padding: 50px 0 100px;
+}
+.MISC-section {
+  min-height: 100vh;
+  background-color: #EFE6EC;
+  padding: 50px 0 100px;
+}
+.SKILLS-section {
   min-height: 100vh;
   background-color: #EFE6EC;
   padding: 50px 0 100px;
 }
 
 .LEO-image  {
-  height: 350px;
-  width: 600px;
   margin-bottom: 85px;
 }
 
@@ -168,6 +181,7 @@ nav ul ul li a {
 
 .slider-wrapper .evidence-list .SKILLS-image {
   object-fit: cover;
+  flex: 0 0 auto;
   scroll-snap-align: start;
 }
 
@@ -193,6 +207,33 @@ nav ul ul li a {
   align-items:  center;
   justify-content:  center;
 }
+
+/* LEO Slider Container */
+.leoS1-slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.leoS1-slider-container .slider-wrapper {
+  max-width: 720px;
+  width: 100%;
+  align-items:  center;
+  justify-content:  center;
+}
+.leoS2-slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.leoS2-slider-container .slider-wrapper {
+  max-width: 630px;
+  width: 100%;
+  align-items:  center;
+  justify-content:  center;
+}
+
 
 /* NTHS Slider Container */
 .nthsS1-slider-container {
@@ -228,7 +269,7 @@ nav ul ul li a {
   margin-top: 30px;
 }
 .skills-slider-container .slider-wrapper {
-  max-width: 475px;
+  max-width: 600px;
   width: 100%;
   align-items: center;
   justify-content: center;

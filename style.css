@@ -104,7 +104,24 @@ nav ul ul li a {
   min-height: 100vh;
   color: #4B2F40;
   justify-content: space-between;
-  padding-left: 20px;
+  padding-left: 120px;
+}
+
+.portfolio-section .portfolio-details .title {
+  font-size: 60px;
+  font-weight: bold;
+  max-width: 50%;
+}
+.portfolio-section .portfolio-details .subtitle {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.portfolio-section .portfolio-details .description {
+  margin: 24px 0 40px;
+  max-width: 65%;
+  font-size: 1.2em;
+
 }
 
 .section-content {
