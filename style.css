@@ -108,20 +108,26 @@ nav ul ul li a {
 }
 
 .portfolio-section .portfolio-details .title {
-  font-size: 60px;
+  font-size: 65px;
   font-weight: bold;
-  max-width: 50%;
+  max-width: 100%;
 }
 .portfolio-section .portfolio-details .subtitle {
   margin-bottom: 8px;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .portfolio-section .portfolio-details .description {
   margin: 24px 0 40px;
-  max-width: 65%;
-  font-size: 1.2em;
+  max-width: 100%;
+  font-size: 1.25em;
 
+}
+
+.portfolio-section .portfolio-image-wrapper {
+    max-width: 100%;
+    padding-top:  50px;
+    padding-right: 50px;
 }
 
 .section-content {
@@ -199,6 +205,9 @@ nav ul ul li a {
 
 .about-section .contact-list .contact-link:hover {
   color: #B8819E;
+  cursor: pointer;
+  transform: scale(1.3);
+  transition: transform 0.3 ease, color 0.3s ease;
 }
 
 iframe {
