@@ -147,6 +147,10 @@ nav ul ul li a {
   padding: 50px 0 100px;
 }
 
+img {
+  border-radius: 10px;
+}
+
 .LEO-image  {
   margin-bottom: 85px;
 }
@@ -157,6 +161,7 @@ nav ul ul li a {
 .SKILLS-image {
   margin-bottom: 85px;
 }
+
 
 /* Image Slider Styling */
 .slider-wrapper .evidence-list {
@@ -277,7 +282,7 @@ nav ul ul li a {
 /* Image Slider Buttons */
 .slider-wrapper .slide-button {
   position: absolute;
-  top: 50%;
+  top: 42.5%;
   height: 50px;
   width: 50px;
   color: #EFE6EC;

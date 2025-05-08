@@ -34,3 +34,5 @@ const initSliders = () => {
 // Initialize sliders when the page loads
 window.addEventListener("load", initSliders);
 
+
+
