@@ -46,6 +46,8 @@ nav ul li a {
   line-height: 70px;
   font-size: 20px;
   padding: 10px 15px;
+  font-family: Anton SC;
+  letter-spacing: 1px;
 }
 
 nav ul li a:hover {
@@ -77,7 +79,7 @@ nav ul li:hover > ul{
 nav ul ul li {
   position: relative;
   margin: 0px;
-  width: 190px;
+  width: 195px;
   float: none;
   display: list-item;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
@@ -86,6 +88,8 @@ nav ul ul li {
 nav ul ul li a {
   font-size: 18px;
   line-height: 50px;
+  font-family: Anton SC;
+  letter-spacing: 1px;
 }
 .show, .icon, input {
   display: none;
@@ -97,36 +101,140 @@ nav ul ul li a {
 }
 
 .section-title {
-  text-align: center;
-  padding: 120px 0 60px;
-  text-transform: uppercase;
-  font-size: 30px;
+  text-align: left;
+  padding: 120px 0 5px 30px;
+  font-size: 55px;
   word-spacing: 5px;
+  font-weight: bold;
+  font-family:  Anton SC;
+  letter-spacing:   2px;
+  word-spacing:   3px;
+  line-height:  90px;
+  color: #4B2F40;
 }
-
 .section-title::after {
   content: "";
-  width: 120px;
+  width: 200px;
   height: 5px;
   display: block;
-  margin: 10px auto 0; 
+  margin-top: 5px;
+  margin-bottom: 5px;
   border-radius: 5px;
+  margin-left: 123px;
   background-color: #B8819E;
 }
 
-.section-content .section-subtitle {
-  text-align: center;
+.subtitle {
+  text-align: left;
+  padding-left: 30px;
+  letter-spacing:   2px;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: Anton SC;
+  color: #4B2F40;
+}
+.description {
+  text-align: left;
+  padding-top: 15px;
+  padding-left: 30px;
   font-size: 25px;
+  font-family: Roboto Condensed;
+  color: #4B2F40;
+  font-weight: lighter;
 }
 
-.section-content .event {
-  text-align: center;
-  font-size: 21px;
+#grid {
+  width: 950px;
+  height: auto;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates 2 columns */
+  grid-template-rows: 330px 330px 330px; /* Adjusts rows automatically */
 }
 
+#grid a {
+  text-decoration: none; /* Removes underline from links */
+  color: inherit; /* Ensures link text inherits color styling */
+}
+
+#grid a .section-content {
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: transform 0.2s ease; /* Adds hover effect */
+}
+
+#grid a .section-content:hover {
+    transform: scale(1.05); /* Slightly enlarges the box on hover */
+}
+
+.leo-grid {
+    border: 4px solid #4B2F40;
+    border-radius: 10px;
+    height: 18rem;
+    grid-row: 1 / span 2;
+    grid-column: 1;
+
+}
+.nths-grid {
+  border: 4px solid #4B2F40;
+  border-radius: 10px;
+  height: 18rem;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+.skills-grid {
+  border: 4px solid #4B2F40;
+  border-radius: 10px;
+  height: 18rem;
+  grid-row: 2 / span 3;
+  grid-column:  1 / span 2;
+}
+.interact-grid {
+  border: 4px solid #4B2F40;
+  border-radius: 10px;
+  height: 18rem;
+  grid-row: 2 / span 3;
+  grid-column:  1 / span 2;
+}
+.misc-grid {
+  border: 4px solid #4B2F40;
+  border-radius: 10px;
+  height: 18rem;
+  grid-row: 3;
+  grid-column:  1 / span 2;
+}
+
+/* Styling for the club title labels */
+.section-content .section-subtitle {
+  font-family: Anton SC;
+  font-size: 30px;
+  letter-spacing: 1.2px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  color: #333;
+  text-align: left;
+  padding:  10px 0 12px 12px;
+  color: #4B2F40;
+}
+.section-content .club-description {
+  font-family: Roboto Condensed;
+  font-size: 20px;
+  margin-left: 5px;
+  padding:  0 12px 20px 12px;
+  padding-bottom: 50px;
+  font-weight: lighter;
+}
+
+/* Make the last section span the full width */
+/**.section-content:last-child {
+    grid-column: span 1.5; /* Spans across both columns */
+/*    justify-content: space-between;
+} */
 
 /* Community Service Section Styling */
-.LEO-section {
+
+/* .LEO-section {
   min-height: 100vh;
   background-color: #EFE6EC;
   padding: 50px 0 100px;
@@ -145,7 +253,7 @@ nav ul ul li a {
   min-height: 100vh;
   background-color: #EFE6EC;
   padding: 50px 0 100px;
-}
+} 
 
 img {
   border-radius: 10px;
@@ -160,7 +268,7 @@ img {
 }
 .SKILLS-image {
   margin-bottom: 85px;
-}
+} */
 
 
 /* Image Slider Styling */
@@ -190,7 +298,7 @@ img {
   scroll-snap-align: start;
 }
 
-
+/*
 .slider-container {
   display: flex;
   align-items: center;
@@ -213,7 +321,7 @@ img {
   justify-content:  center;
 }
 
-/* LEO Slider Container */
+/* LEO Slider Container *//*
 .leoS1-slider-container {
   display: flex;
   align-items: center;
@@ -240,7 +348,7 @@ img {
 }
 
 
-/* NTHS Slider Container */
+/* NTHS Slider Container *//*
 .nthsS1-slider-container {
   display: flex;
   align-items: center;
@@ -266,7 +374,7 @@ img {
   justify-content:  center;
 }
 
-/* SkillsUSA Slider Container */
+/* SkillsUSA Slider Container *//*
 .skills-slider-container {
   display: flex;
   align-items: center;
@@ -279,7 +387,7 @@ img {
   align-items: center;
   justify-content: center;
 }
-/* Image Slider Buttons */
+/* Image Slider Buttons *//*
 .slider-wrapper .slide-button {
   position: absolute;
   top: 42.5%;
