@@ -46,6 +46,8 @@ nav ul li a {
   line-height: 70px;
   font-size: 20px;
   padding: 10px 15px;
+  font-family: Anton SC;
+  letter-spacing: 1px;
 }
 
 nav ul li a:hover {
@@ -77,7 +79,7 @@ nav ul li:hover > ul{
 nav ul ul li {
   position: relative;
   margin: 0px;
-  width: 190px;
+  width: 195px;
   float: none;
   display: list-item;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
@@ -86,6 +88,8 @@ nav ul ul li {
 nav ul ul li a {
   font-size: 18px;
   line-height: 50px;
+  font-family: Anton SC;
+  letter-spacing: 1px;
 }
 .show, .icon, input {
   display: none;
@@ -108,19 +112,25 @@ nav ul ul li a {
 }
 
 .portfolio-section .portfolio-details .title {
-  font-size: 65px;
-  font-weight: bold;
+  font-size: 80px;
   max-width: 100%;
+  font-family:  Anton SC;
+  letter-spacing:   2px;
+  word-spacing:   3px;
+  line-height:  90px;
 }
 .portfolio-section .portfolio-details .subtitle {
   margin-bottom: 8px;
   font-size: 17px;
+  font-family:  Carrois Gothic;
+  font-weight:  bolder;
 }
 
 .portfolio-section .portfolio-details .description {
   margin: 24px 0 40px;
   max-width: 100%;
-  font-size: 1.25em;
+  font-size: 1.45rem;
+  font-family:  Roboto Condensed;
 
 }
 
@@ -137,10 +147,12 @@ nav ul ul li a {
 
 .section-title {
   text-align: center;
-  padding: 60px 0 90px;
+  padding: 50px 0 90px;
   text-transform: uppercase;
-  font-size: 28px;
-  word-spacing: 5px;
+  font-size: 35px;
+  word-spacing: 1px;
+  font-family:  Anton SC;
+  letter-spacing:   2px;
 }
 
 .section-title::after {
@@ -176,6 +188,7 @@ nav ul ul li a {
 
 .about-section .about-details .section-title {
   padding: 0;
+  color: #4B2F40;
 }
 
 .about-section .about-details {
@@ -188,6 +201,8 @@ nav ul ul li a {
   margin: 40px 0 40px;
   text-align: center;
   font-size: 17px;
+  font-family: Roboto Condensed;
+
 
 }
 .about-section .contact-list {
@@ -231,6 +246,7 @@ iframe {
 
 .goals-section .section-title {
   margin-top: -40px;
+  color: #4B2F40;
 }
 .goals-section .goal-details {
   display: flex;
@@ -238,6 +254,7 @@ iframe {
   align-items: center;
   gap: 20px;
   justify-content: center;
+  color: #4B2F40;
 }
 .goals-section .goal-details .goal-embed {
   display: flex;
@@ -259,6 +276,9 @@ iframe {
   margin-top: -40px;
   margin-bottom: 60px;
   text-align: center;
+  font-family: Anton SC;
+  letter-spacing: 1px;
+  color: #4B2F40;
 }
 
 /* Resume Section Styling */
