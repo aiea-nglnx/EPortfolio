@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background: #EFE6EC;
+}
+nav {
+  background: #623950;
+  box-shadow: 2px 0.2px 10px #58374A;
+  position: fixed;
+  width: 100%;
+  z-index: 5;  
+}
+nav:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+nav .logo {
+  float: left;
+  font-size: 30px;
+   font-weight: bold;
+  line-height: 70px;
+  padding-left: 35px;
+}
+nav ul {
+  float: right;
+  list-style: none;
+  margin-right: 35px;
+  position: relative;
+  gap: 25px;
+}
+nav ul li {
+  float: left;
+  display: inline-block;
+  background: #623950;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: #EFE6EC;
+  text-decoration: none;
+  line-height: 70px;
+  font-size: 20px;
+  padding: 10px 15px;
+  font-family: Anton SC;
+  letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+  color: #EFE6EC;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #DCC4D0,
+              0 0 5px #D2B2C2;
+}
+
+nav ul ul li a:hover {
+  color: #E0CCD6;
+  box-shadow: none;
+}
+
+nav ul ul {
+  position: absolute;
+  top: 90px;
+  border-top: 3px solid #B98DA4;
+  opacity: 0;
+  visibility: hidden;
+  transition: top 0.3s ease, opacity 0.3s ease;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+
+nav ul ul li {
+  position: relative;
+  margin: 0px;
+  width: 195px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul ul li a {
+  font-size: 18px;
+  line-height: 50px;
+  font-family: Anton SC;
+  letter-spacing: 1px;
+}
+.show, .icon, input {
+  display: none;
+}
+
+.section-content {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: left;
+  padding: 150px 0 5px 30px;
+  font-size: 55px;
+  word-spacing: 5px;
+  font-weight: bold;
+  font-family:  Anton SC;
+  letter-spacing:   2px;
+  word-spacing:   3px;
+  line-height:  90px;
+  color: #4B2F40;
+}
+.section-title::after {
+  content: "";
+  width: 200px;
+  height: 5px;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  margin-left: 123px;
+  background-color: #B8819E;
+}
+
+.subtitle {
+  text-align: left;
+  padding-left: 30px;
+  letter-spacing:   2px;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: Anton SC;
+  color: #4B2F40;
+}
+.description {
+  text-align: left;
+  padding-top: 15px;
+  padding-left: 30px;
+  font-size: 25px;
+  font-family: Roboto Condensed;
+  color: #4B2F40;
+  font-weight: lighter;
+}
+
+/* Grid container styling */
+.section-content {
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 30px;
+}
+
+/* Grid item styles */
+.event1, .event2 {
+  border: 4px solid #5F4253;
+  background-color: #5F4253;
+  border-radius: 10px;
+  height: 29rem;
+  grid-column: span 1;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 0;
+  margin-bottom: 100px;
+}
+
+/* Slider wrapper for full-width scrolling */
+.slider-wrapper {
+  display: flex;
+  width: 100%; 
+  height: 100%; 
+  overflow-x: scroll; /* Enable horizontal scrolling */
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory; /* Snap to each image */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Ensure padding/margin is accounted for */
+}
+
+.slider-wrapper::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+/* Evidence list to contain images horizontally */
+.evidence-list {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping of images */
+  height: 100%;
+  width: 100%; 
+  gap: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Prevent overflow due to padding/margin */
+}
+
+/* Image styling */
+.NTHS-image {
+  flex: 0 0 100%; 
+  height: 100%;/
+  object-fit: cover; /* Ensure the image fills the container without zooming */
+  scroll-snap-align: start; /* Snap to the start of each image */
+  display: block;
+  margin: 0; /* Remove any default margins */
+}
+/* Event text styling */
+.event-name {
+  margin-top: 1.5rem; /* Add space between image and text */
+  margin-bottom: 1.5rem;
+  color: #fff;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: Roboto Condensed;
+  font-weight: 900;
+}
