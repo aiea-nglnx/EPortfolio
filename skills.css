@@ -95,14 +95,61 @@ nav ul ul li a {
   display: none;
 }
 
+/* main Section Styling */
+.main-section {
+  min-height: 100vh;
+  background-color: #EFE6EC;
+  width: 100%;
+  background-image: ;
+}
+
+.main-section .main-section-content {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  color: #4B2F40;
+  justify-content: space-between;
+  padding-left: 120px;
+}
+
+.main-section .main-details .main-title {
+  font-size: 80px;
+  max-width: 100%;
+  font-family:  Anton SC;
+  letter-spacing:   2px;
+  word-spacing:   3px;
+  line-height:  90px;
+}
+.main-section .main-details .main-subtitle {
+  margin-bottom: 8px;
+  font-size: 17px;
+  font-family:  Carrois Gothic;
+  font-weight:  bolder;
+}
+.main-section .main-details .main-subtitle2 {
+  margin-top: 15px;
+  margin-bottom: 2px;
+  font-size: 25px;
+  font-family:  Anton SC;
+  font-weight:  bolder;
+  letter-spacing: 2px;
+}
+
+.main-section .main-details .main-description {
+  margin: 24px 0 40px;
+  max-width: 90%;
+  font-size: 1.45rem;
+  font-family:  Roboto Condensed;
+}
+
 .section-content {
   margin: 0 auto;
   padding: 0 20px;
 }
 
 .section-title {
-  text-align: left;
-  padding: 150px 0 5px 30px;
+  text-align: center;
+  padding: 55px 0 5px 30px;
   font-size: 55px;
   word-spacing: 5px;
   font-weight: bold;
@@ -112,6 +159,7 @@ nav ul ul li a {
   line-height:  90px;
   color: #4B2F40;
 }
+
 .section-title::after {
   content: "";
   width: 200px;
@@ -120,49 +168,64 @@ nav ul ul li a {
   margin-top: 5px;
   margin-bottom: 5px;
   border-radius: 5px;
-  margin-left: 123px;
+  margin-left: 35rem;
   background-color: #B8819E;
 }
 
 .subtitle {
-  text-align: left;
-  padding-left: 30px;
+  text-align: center;
+  margin-top: 20px;
   letter-spacing:   2px;
   font-size: 35px;
   font-weight: bold;
   font-family: Anton SC;
   color: #4B2F40;
 }
+
 .description {
-  text-align: left;
+  text-align: center;
   padding-top: 15px;
-  padding-left: 30px;
-  font-size: 25px;
+  font-size: 20px;
   font-family: Roboto Condensed;
   color: #4B2F40;
   font-weight: lighter;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-
-/* Grid container styling */
-.section-content {
-  max-width: 950px;
-  width: 100%;
+.name {
   margin-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+  letter-spacing:   2px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Anton SC;
+  color: #4B2F40;
+}
+
+/* Service Section Styling */
+.Service-section {
+  padding: 20px 0 20px;
+  background: #EADDE1;
+  min-height: 100vh;
+}
+
+.section-content {
+  width: 100%;
+  margin-top: 50px;
+  max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  gap: 30px;
+  gap: 10px;
 }
 
 /* Grid item styles */
 .event1, .event2 {
-  border: 4px solid #5F4253;
+  border: 3px solid #5F4253;
   background-color: #5F4253;
   border-radius: 10px;
-  height: 26rem;
+  height: 30rem;
   grid-column: span 1;
   overflow: hidden;
   position: relative;
@@ -171,7 +234,7 @@ nav ul ul li a {
   justify-content: flex-start;
   align-items: stretch;
   padding: 0;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 
 }
 
@@ -222,4 +285,84 @@ nav ul ul li a {
   font-size: 1.2rem;
   font-family: Roboto Condensed;
   font-weight: 900;
+}
+
+#grid {
+  width: 100%;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  max-width: 1200px;
+  margin-bottom:  50px;
+}
+
+.section-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-template-rows: auto auto auto; /* 3 rows with automatic height */
+  gap: 5px; /* Adds spacing between grid items */
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Common styles for all images */
+.SKILLS-image {
+  width: 100%;
+  height: 100%; /* Ensures the image fills its container */
+  object-fit: cover; /* Ensures the image maintains aspect ratio */
+  border: 3px solid #5F4253;
+  border-radius: 8px;
+
+}
+
+/* Slot 2: Square */
+.ctsophoto2 {
+  grid-column: 1; /* First column */
+  grid-row: 1; /* First row */
+  aspect-ratio: 1 / 1; /* Makes it square-like */
+  height:   420px;
+}
+
+/* Slot 3: Tall rectangle */
+.ctsophoto3 {
+  grid-column: 2; 
+  grid-row: 1;
+  height: 420px;
+}
+
+/* Slot 5: Tall rectangle */
+.ctsophoto5 {
+  grid-column: 3; 
+  grid-row: 1 / span 2; 
+  width:  420px;
+}
+
+/* Slot 4: Wide rectangle */
+.ctsophoto4 {
+  grid-column: 1 / span 2; 
+  grid-row: 2; 
+  height: 380px; 
+}
+
+/* Slot 1: Rectangle */
+.ctsophoto1 {
+  grid-column: 1; 
+  grid-row: 3; 
+  height: 320px; 
+}
+
+/* Slot 6: Rectangle */
+.ctsophoto7 {
+  grid-column: 2; 
+  grid-row: 3; 
+  height: 320px; 
+  width: 310px;
+}
+
+/* Slot 7: Rectangle */
+.ctsophoto6 {
+  grid-column: 3;
+  grid-row: 3; 
+  height: 320px; 
 }
