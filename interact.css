@@ -95,6 +95,52 @@ nav ul ul li a {
   display: none;
 }
 
+/* main Section Styling */
+.main-section {
+  min-height: 100vh;
+  background-color: #EFE6EC;
+}
+
+.main-section .main-section-content {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  color: #4B2F40;
+  justify-content: space-between;
+  padding-left: 120px;
+}
+
+.main-section .main-details .main-title {
+  font-size: 80px;
+  max-width: 100%;
+  font-family:  Anton SC;
+  letter-spacing:   2px;
+  word-spacing:   3px;
+  line-height:  90px;
+}
+.main-section .main-details .main-subtitle {
+  margin-bottom: 8px;
+  font-size: 17px;
+  font-family:  Carrois Gothic;
+  font-weight:  bolder;
+}
+.main-section .main-details .main-subtitle2 {
+  margin-top: 15px;
+  margin-bottom: 2px;
+  font-size: 25px;
+  font-family:  Anton SC;
+  font-weight:  bolder;
+  letter-spacing: 2px;
+}
+
+.main-section .main-details .main-description {
+  margin: 24px 0 40px;
+  max-width: 90%;
+  font-size: 1.45rem;
+  font-family:  Roboto Condensed;
+
+}
+
 .section-content {
   margin: 0 auto;
   padding: 0 20px;
@@ -141,4 +187,147 @@ nav ul ul li a {
   font-family: Roboto Condensed;
   color: #4B2F40;
   font-weight: lighter;
+}
+
+.section-title {
+  text-align: center;
+  padding: 55px 0 5px 30px;
+  font-size: 55px;
+  word-spacing: 5px;
+  font-weight: bold;
+  font-family:  Anton SC;
+  letter-spacing:   2px;
+  word-spacing:   3px;
+  line-height:  90px;
+  color: #4B2F40;
+}
+.section-title::after {
+  content: "";
+  width: 200px;
+  height: 5px;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  margin-left: 35rem;
+  background-color: #B8819E;
+}
+
+.subtitle {
+  text-align: center;
+  margin-top: 20px;
+  letter-spacing:   2px;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: Anton SC;
+  color: #4B2F40;
+}
+
+.description {
+  text-align: center;
+  padding-top: 15px;
+  font-size: 20px;
+  font-family: Roboto Condensed;
+  color: #4B2F40;
+  font-weight: lighter;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.name {
+  margin-top: 60px;
+  text-align: center;
+  letter-spacing:   2px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Anton SC;
+  color: #4B2F40;
+}
+
+/* Service Section Styling */
+.Service-section {
+  padding: 20px 0 20px;
+  background: #EADDE1;
+  min-height: 100vh;
+
+}
+
+/* Grid container styling */
+.section-content {
+  max-width: 900px;
+  width: 100%;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+}
+
+/* Grid item styles */
+.event1, .event2 {
+  border: 4px solid #5F4253;
+  background-color: #5F4253;
+  border-radius: 8px;
+  height: 23rem;
+  grid-column: span 1;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 0;
+  margin-bottom: 70px;
+
+}
+
+/* Slider wrapper for full-width scrolling */
+.slider-wrapper {
+  display: flex;
+  width: 100%; 
+  height: 100%; 
+  overflow-x: scroll; /* Enable horizontal scrolling */
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory; /* Snap to each image */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Ensure padding/margin is accounted for */
+}
+
+.slider-wrapper::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+/* Evidence list to contain images horizontally */
+.evidence-list {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping of images */
+  height: 100%;
+  width: 100%; 
+  gap: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Prevent overflow due to padding/margin */
+}
+
+/* Image styling */
+.Interact-image {
+  flex: 0 0 100%; 
+  height: 100%;/
+  object-fit: cover; /* Ensure the image fills the container without zooming */
+  scroll-snap-align: start; /* Snap to the start of each image */
+  display: block;
+  margin: 0; /* Remove any default margins */
+}
+/* Event text styling */
+.event-name {
+  margin-top: 1.5rem; /* Add space between image and text */
+  margin-bottom: 1.5rem;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: Roboto Condensed;
+  font-weight: 900;
 }
