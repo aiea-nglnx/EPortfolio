@@ -102,7 +102,7 @@ nav ul ul li a {
 
 .section-title {
   text-align: left;
-  padding: 120px 0 5px 30px;
+  padding: 150px 0 5px 30px;
   font-size: 55px;
   word-spacing: 5px;
   font-weight: bold;
@@ -114,13 +114,13 @@ nav ul ul li a {
 }
 .section-title::after {
   content: "";
-  width: 200px;
+  width: 120px;
   height: 5px;
   display: block;
   margin-top: 5px;
   margin-bottom: 5px;
   border-radius: 5px;
-  margin-left: 123px;
+  margin-left: 100px;
   background-color: #B8819E;
 }
 
