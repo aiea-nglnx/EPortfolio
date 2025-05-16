@@ -95,14 +95,75 @@ nav ul ul li a {
   display: none;
 }
 
+/* main Section Styling */
+.main-section {
+  min-height: 100vh;
+  background-color: #EFE6EC;
+}
+
+.main-section .main-section-content {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  color: #4B2F40;
+  justify-content: space-between;
+  padding-left: 120px;
+}
+
+.main-section .main-details .main-title {
+  font-size: 80px;
+  max-width: 100%;
+  font-family:  Anton SC;
+  letter-spacing:   2px;
+  word-spacing:   3px;
+  line-height:  90px;
+}
+.main-section .main-details .main-subtitle {
+  margin-bottom: 8px;
+  font-size: 17px;
+  font-family:  Carrois Gothic;
+  font-weight:  bolder;
+}
+.main-section .main-details .main-subtitle2 {
+  margin-top: 15px;
+  margin-bottom: 2px;
+  font-size: 25px;
+  font-family:  Anton SC;
+  font-weight:  bolder;
+  letter-spacing: 2px;
+}
+
+.main-section .main-details .main-description {
+  margin: 24px 0 40px;
+  max-width: 90%;
+  font-size: 1.45rem;
+  font-family:  Roboto Condensed;
+
+}
+
+.main-section .main-image-wrapper {
+  max-width: 100%;
+  margin-top:  110px;
+  margin-bottom: 50px;
+  padding-right: 120px;
+}
+
+.main-image {
+  height: 40rem;
+  width: 22rem;
+  border: 4px solid #5F4253;
+  border-radius: 5px;
+
+}
+
 .section-content {
   margin: 0 auto;
   padding: 0 20px;
 }
 
 .section-title {
-  text-align: left;
-  padding: 150px 0 5px 30px;
+  text-align: center;
+  padding: 55px 0 5px 30px;
   font-size: 55px;
   word-spacing: 5px;
   font-weight: bold;
@@ -112,15 +173,16 @@ nav ul ul li a {
   line-height:  90px;
   color: #4B2F40;
 }
+
 .section-title::after {
   content: "";
-  width: 100px;
+  width: 200px;
   height: 5px;
   display: block;
   margin-top: 5px;
   margin-bottom: 5px;
   border-radius: 5px;
-  margin-left: 50px;
+  margin-left: 35rem;
   background-color: #B8819E;
 }
 
@@ -143,25 +205,71 @@ nav ul ul li a {
   font-weight: lighter;
 }
 
-/* Grid container styling */
-.section-content {
-  max-width: 1400px;
-  width: 100%;
+.subtitle {
+  text-align: center;
+  margin-top: 20px;
+  letter-spacing:   2px;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: Anton SC;
+  color: #4B2F40;
+}
+
+.description {
+  text-align: center;
+  padding-top: 15px;
+  font-size: 20px;
+  font-family: Roboto Condensed;
+  color: #4B2F40;
+  font-weight: lighter;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.name {
   margin-top: 60px;
-  margin-left: auto;
+  text-align: center;
+  letter-spacing:   2px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Anton SC;
+  color: #4B2F40;
+}
+
+/* Service Section Styling */
+.Service-section {
+  padding: 20px 0 20px;
+  background: #EADDE1;
+  min-height: 100vh;
+
+}
+
+/* Grid container styling */
+#grid {
+  width: 100%;
+  display: flex;
   margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  max-width: 1400px;
+  margin-bottom:  50px;
+}
+
+.section-content {
+  max-width: 1300px;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 420px);
   grid-template-rows: auto;
-  gap: 30px;
+  gap: 10px;
 }
 
 /* Grid item styles */
 .event1, .event2, .event3 {
   border: 4px solid #5F4253;
   background-color: #5F4253;
-  border-radius: 10px;
-  height: 22rem;
+  border-radius: 8px;
+  height: 24rem;
   grid-column: span 1;
   overflow: hidden;
   position: relative;
@@ -170,7 +278,7 @@ nav ul ul li a {
   justify-content: flex-start;
   align-items: stretch;
   padding: 0;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 
 }
 
