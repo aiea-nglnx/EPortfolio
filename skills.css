@@ -97,17 +97,41 @@ nav ul ul li a {
 
 /* main Section Styling */
 .main-section {
+  background-attachment: fixed;
   min-height: 100vh;
   background-color: #EFE6EC;
   width: 100%;
-  background-image: ;
+  background-image: url("Portfolio Photos/SkillsUSA/IMG_2273.jpeg");
+  background-size: cover;
+  background-position: 50% 20%;
+  background-repeat:  no-repeat;
 }
+
+.main-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: inherit;
+  background-size: inherit;
+  background-position: inherit;
+  background-repeat: inherit;
+  filter: blur(4px); /* Adjust blur radius as needed */
+  z-index: 1;
+  pointer-events: none;
+}
+
+.main-section > * {
+  position: relative;
+  z-index: 2; /* Ensures your content stays above the blur */
+}
+
+
 
 .main-section .main-section-content {
   display: flex;
   align-items: center;
   min-height: 100vh;
-  color: #4B2F40;
+  color: #EFE6EC;
   justify-content: space-between;
   padding-left: 120px;
 }
@@ -149,7 +173,7 @@ nav ul ul li a {
 
 .section-title {
   text-align: center;
-  padding: 55px 0 5px 30px;
+  padding: 55px 0 5px 10px;
   font-size: 55px;
   word-spacing: 5px;
   font-weight: bold;
@@ -201,6 +225,7 @@ nav ul ul li a {
   font-weight: bold;
   font-family: Anton SC;
   color: #4B2F40;
+  margin-bottom: -50px;
 }
 
 /* Service Section Styling */
@@ -211,13 +236,14 @@ nav ul ul li a {
 }
 
 .section-content {
+  justify-content:  center;
   width: 100%;
-  margin-top: 50px;
-  max-width: 1200px;
+  margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  gap: 10px;
+  gap: 40px;
+  
 }
 
 /* Grid item styles */
@@ -234,7 +260,7 @@ nav ul ul li a {
   justify-content: flex-start;
   align-items: stretch;
   padding: 0;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 
 }
 
@@ -249,6 +275,7 @@ nav ul ul li a {
   padding: 0;
   margin: 0;
   box-sizing: border-box; /* Ensure padding/margin is accounted for */
+
 }
 
 .slider-wrapper::-webkit-scrollbar {
@@ -270,7 +297,8 @@ nav ul ul li a {
 /* Image styling */
 .SKILLS-image {
   flex: 0 0 100%; 
-  height: 100%;/
+  width:  100%;
+  height: 100%;
   object-fit: cover; /* Ensure the image fills the container without zooming */
   scroll-snap-align: start; /* Snap to the start of each image */
   display: block;
