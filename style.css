@@ -147,7 +147,7 @@ nav ul ul li a {
 
 .section-title {
   text-align: center;
-  padding: 50px 0 90px;
+  padding: 50px 0 30px;
   text-transform: uppercase;
   font-size: 35px;
   word-spacing: 1px;
@@ -167,8 +167,9 @@ nav ul ul li a {
 
 /* About Section Styling */
 .about-section {
-  padding: 120px 0;
+  padding: 70px 0;
   background: #EADDE1;
+  min-height: 100vh;
 }
 
 .about-section .section-content {
@@ -196,9 +197,9 @@ nav ul ul li a {
   margin-right: 50px;
 }
 
-.about-section .about-details .text{
+.about-section .about-details .text {
   line-height: 30px;
-  margin: 40px 0 40px;
+  margin: 20px 0 30px;
   text-align: center;
   font-size: 17px;
   font-family: Roboto Condensed;
@@ -235,17 +236,39 @@ iframe {
 .statement-section {
   background-color: #5F4253;
 }
+
 .statement-section .section-title {
   color: #EFE6EC;
+}
+
+.statement-section .statement-details .text1 {
+  text-align: center;
+  font-size: 20px;
+  font-family: Roboto Condensed;
+  font-style: italic;
+  color: #EFE6EC;
+}
+
+.statement-section .statement-details .text2 {
+  line-height: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-family: Roboto Condensed;
+  padding-top:  35px;
+  padding-bottom:  30px;
+  color: #EFE6EC;
+
 }
 
 /* Goals Section Styling */
 .goals-section {
   padding: 50px 0 20px;
+  min-height: 100vh;
 }
 
 .goals-section .section-title {
   margin-top: -40px;
+  margin-bottom:  50px;
   color: #4B2F40;
 }
 .goals-section .goal-details {
@@ -265,7 +288,7 @@ iframe {
 }
 .goals-section .goal-details .goal-embed iframe {
   aspect-ratio: 1;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
   object-fit: contain;
@@ -284,10 +307,12 @@ iframe {
 /* Resume Section Styling */
 .resume-section {
   background-color: #5F4253;
+  min-height: 100vh;
 }
 
 .resume-section .section-title {
   color: #EFE6EC;
+  margin-bottom:  20px;
 }
 
 .resume-section, .section-content, .resume-details, .resume-embed {
