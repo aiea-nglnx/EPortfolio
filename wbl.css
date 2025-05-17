@@ -94,3 +94,288 @@ nav ul ul li a {
 .show, .icon, input {
   display: none;
 }
+
+/* Experiences Sections */
+.experiences-section {
+  background-color: #EFE6EC;
+  min-height:   100vh;
+}
+
+.experiences-section .section-title {
+  font-family: Anton SC;
+  text-align: center;
+  color: #4B2F40;
+  font-size: 40px;
+  letter-spacing: 2px;
+  padding-top: 100px;
+
+}
+.experiences-section .exp-details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 40px 40px; 
+  justify-content: center; 
+  color: #4B2F40;
+  padding-left: 40px;  
+  padding-right: 40px;
+}
+.experiences-section .exp-details .exp-embed {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 500px; 
+  max-width: 650px;
+  flex: 1 1 340px;
+  margin-bottom: 50px;
+}
+.experiences-section .exp-details .exp-embed iframe {
+  aspect-ratio: 1;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  object-fit: contain;
+}
+
+.experiences-section .exp-details .exp-embed .section-subtitle {
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: Anton SC;
+  letter-spacing: 1px;
+  color: #4B2F40;
+}
+
+/* Intern Sections */
+.intern-section {
+  background-color: #DBC8D6;
+  min-height:   100vh;
+}
+
+.intern-section .section-title {
+  font-family: Anton SC;
+  text-align: center;
+  color: #4B2F40;
+  font-size: 40px;
+  letter-spacing: 2px;
+  padding-top: 80px;
+
+}
+.intern-section .intern-details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 40px 40px; 
+  justify-content: center; 
+  color: #4B2F40;
+  padding-left: 40px;  
+  padding-right: 40px;
+}
+.intern-section .intern-details .intern-embed {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 500px; 
+  max-width: 600px;
+  flex: 1 1 340px;
+  margin-bottom: 10px;
+}
+.intern-section .intern-details .intern-embed img {
+  aspect-ratio: 1;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  object-fit: contain;
+}
+
+.intern-section .intern-details .intern-embed .section-subtitle {
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: Anton SC;
+  letter-spacing: 1px;
+  color: #4B2F40;
+}
+
+/* Project Sections */
+.Project-section {
+  background-color: #EFE6EC;
+  min-height:   100vh;
+}
+
+.Project-section .section-title {
+  font-family: Anton SC;
+  text-align: center;
+  color: #4B2F40;
+  font-size: 40px;
+  letter-spacing: 2px;
+  padding-top: 80px;
+
+}
+.Project-section .project-details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 40px 40px; 
+  justify-content: center; 
+  color: #4B2F40;
+  padding-left: 40px;  
+  padding-right: 40px;
+}
+.Project-section .project-details .project-embed {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 700px; 
+  max-width: 850px;
+  flex: 1 1 340px;
+  margin-bottom: 10px;
+}
+.Project-section .project-details .project-embed iframe {
+  aspect-ratio: 1;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  object-fit: contain;
+}
+
+.Project-section .project-details .project-embed .section-subtitle {
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: Anton SC;
+  letter-spacing: 1px;
+  color: #4B2F40;
+}
+.experiences-section .intern-section .Project-section .Certifications-section .Awards-section {
+  padding: 60px 0 40px;
+  position: relative;
+}
+
+/* Certification Section Styling */
+.Certifications-section {
+  background-color: #DBC8D6;
+  min-height:   100vh;
+}
+
+.Awards-section {
+  background-color: #EFE6EC;
+  min-height:   100vh;
+}
+
+.Certifications-section .section-title {
+  font-family: Anton SC;
+  text-align: center;
+  color: #4B2F40;
+  font-size: 40px;
+  letter-spacing: 2px;
+  padding-top: 80px;
+
+}
+.Certifications-section .cert-details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 40px 40px; 
+  justify-content: center; 
+  color: #4B2F40;
+  padding-left: 40px;  
+  padding-right: 40px;
+}
+.Certifications-section .cert-details .cert-embed {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 400px; 
+  max-width: 500px;
+  flex: 1 1 340px;
+  margin-bottom: 10px;
+}
+.Certifications-section .cert-details .cert-embed iframe {
+  aspect-ratio: 1;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  object-fit: contain;
+}
+
+.Certifications-section .cert-details .cert-embed .section-subtitle {
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: Anton SC;
+  letter-spacing: 1px;
+  color: #4B2F40;
+}
+
+/* Awards/Recognition Section Styling */
+.Awards-section {
+  padding: 80px 0 20px;
+  min-height:   100vh;
+}
+
+.Awards-section .section-title {
+  font-family: Anton SC;
+  text-align: center;
+  margin-top: -10px;
+  color: #4B2F40;
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+
+}
+.Awards-section .awards-details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 40px 40px; 
+  justify-content: center; 
+  color: #4B2F40;
+  padding-left: 40px;  
+  padding-right: 40px;
+}
+.Awards-section .awards-details .awards-embed {
+   display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 340px; 
+  max-width: 400px;
+  flex: 1 1 340px;
+  margin-bottom: 10px;
+}
+.Awards-section .awards-details .awards-embed iframe {
+  aspect-ratio: 1;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  object-fit: contain;
+}
+
+.Awards-section .awards-details .awards-embed .section-subtitle {
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Anton SC;
+  letter-spacing: 1px;
+  color: #4B2F40;
+}
