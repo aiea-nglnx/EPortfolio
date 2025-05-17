@@ -142,3 +142,114 @@ nav ul ul li a {
   color: #4B2F40;
   font-weight: lighter;
 }
+
+/* main Section Styling */
+.main-section {
+  min-height: 100vh;
+  background-color: #EFE6EC;
+}
+
+.main-section .main-section-content {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  color: #4B2F40;
+  justify-content: space-between;
+  padding-left: 120px;
+}
+
+.main-section .main-details .main-title {
+  font-size: 80px;
+  max-width: 100%;
+  font-family:  Anton SC;
+  letter-spacing:   2px;
+  word-spacing:   3px;
+  line-height:  90px;
+}
+.main-section .main-details .main-subtitle {
+  margin-bottom: 8px;
+  font-size: 17px;
+  font-family:  Carrois Gothic;
+  font-weight:  bolder;
+}
+.main-section .main-details .main-subtitle2 {
+  margin-top: 15px;
+  margin-bottom: 2px;
+  font-size: 25px;
+  font-family:  Anton SC;
+  font-weight:  bolder;
+  letter-spacing: 2px;
+}
+
+.main-section .main-details .main-description {
+  margin: 24px 0 40px;
+  max-width: 90%;
+  font-size: 1.45rem;
+  font-family:  Roboto Condensed;
+}
+
+.section-content {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  padding: 55px 0 5px 30px;
+  font-size: 55px;
+  word-spacing: 5px;
+  font-weight: bold;
+  font-family:  Anton SC;
+  letter-spacing:   2px;
+  word-spacing:   3px;
+  line-height:  90px;
+  color: #4B2F40;
+}
+.section-title::after {
+  content: "";
+  width: 200px;
+  height: 5px;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  margin-left: 35rem;
+  background-color: #B8819E;
+}
+.Service-section {
+  background: #EADDE1;
+  min-height:  100vh;
+}
+
+/* Make the parent a grid */
+#grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 2fr;
+  grid-template-rows: repeat(0.6fr 0.1fr 0.6fr);
+  gap: 10px;
+  max-width: 1300px;
+  margin: 50px auto 40px auto;
+}
+
+/* Remove default margins from section inside grid */
+#grid > section.lcc-section {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  display: contents; /* Let grid children participate in parent grid */
+}
+
+.lcc-photo1 { grid-column: 1 / 2; grid-row: 1 / 4; }
+.lcc-photo2 { grid-column: 2 / 3; grid-row: 1 / 2; }
+.lcc-photo3 { grid-column: 3 / 4; grid-row: 1 / 4; }
+.lS-photo4  { grid-column: 2 / 3; grid-row: 2 / 3; }
+.lS-photo5  { grid-column: 2 / 3; grid-row: 3 / 4; }
+
+.MISC-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  border: 3px solid #5F4253;
+}
