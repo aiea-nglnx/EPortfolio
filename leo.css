@@ -104,46 +104,45 @@ nav ul ul li a {
 .main-section .main-section-content {
   display: flex;
   align-items: center;
-  min-height: 100vh;
-  color: #4B2F40;
+  min-height: 100vh;  
   justify-content: space-between;
   padding-left: 120px;
+  color: #4B2F40;
 }
 
 .main-section .main-details .main-title {
   font-size: 80px;
   max-width: 100%;
-  font-family:  Anton SC;
-  letter-spacing:   2px;
-  word-spacing:   3px;
-  line-height:  90px;
+  font-family: Anton SC;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  line-height: 90px;
 }
 .main-section .main-details .main-subtitle {
   margin-bottom: 8px;
   font-size: 17px;
-  font-family:  Carrois Gothic;
-  font-weight:  bolder;
+  font-family: Carrois Gothic;
+  font-weight: bolder;
 }
 .main-section .main-details .main-subtitle2 {
   margin-top: 15px;
   margin-bottom: 2px;
-  font-size: 25px;
-  font-family:  Anton SC;
-  font-weight:  bolder;
   letter-spacing: 2px;
+  font-size: 25px;
+  font-family: Anton SC;
+  font-weight: bolder;  
 }
 
 .main-section .main-details .main-description {
   margin: 24px 0 40px;
   max-width: 90%;
   font-size: 1.45rem;
-  font-family:  Roboto Condensed;
-
+  font-family: Roboto Condensed;
 }
 
 .main-section .main-image-wrapper {
   max-width: 100%;
-  margin-top:  110px;
+  margin-top: 110px;
   margin-bottom: 50px;
   padding-right: 120px;
 }
@@ -167,10 +166,10 @@ nav ul ul li a {
   font-size: 55px;
   word-spacing: 5px;
   font-weight: bold;
-  font-family:  Anton SC;
-  letter-spacing:   2px;
-  word-spacing:   3px;
-  line-height:  90px;
+  font-family: Anton SC;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  line-height: 90px;
   color: #4B2F40;
 }
 
@@ -208,7 +207,7 @@ nav ul ul li a {
 .subtitle {
   text-align: center;
   margin-top: 20px;
-  letter-spacing:   2px;
+  letter-spacing: 2px;
   font-size: 35px;
   font-weight: bold;
   font-family: Anton SC;
@@ -229,7 +228,7 @@ nav ul ul li a {
 .name {
   margin-top: 60px;
   text-align: center;
-  letter-spacing:   2px;
+  letter-spacing: 2px;
   font-size: 30px;
   font-weight: bold;
   font-family: Anton SC;
@@ -248,42 +247,60 @@ nav ul ul li a {
 #grid {
   width: 100%;
   display: flex;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 50px;
+  margin: 50px auto 20px auto;
   max-width: 1400px;
-  margin-bottom:  50px;
 }
 
 .section-content {
-  max-width: 1300px;
+  justify-content:  center;
+  margin-right:   auto;
+  margin-left:  auto;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 420px);
+  grid-template-columns: repeat(3, 400px);
   grid-template-rows: auto;
-  gap: 10px;
+  gap: 40px;
 }
 
 /* Grid item styles */
 .event1, .event2, .event3 {
+  height: 24rem;
   border: 4px solid #5F4253;
   background-color: #5F4253;
   border-radius: 8px;
-  height: 24rem;
+  
   grid-column: span 1;
   overflow: hidden;
-  position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: stretch;
+  flex-direction: column; 
   padding: 0;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 
+  box-shadow: 
+    -2px -2px 5px 0px #45363E,
+    0 4px 24px rgba(44, 21, 30, 0.10), 8px 8px 0 #845C74;
+  transition: transform 0.25s cubic-bezier(.4,2,.5,1), box-shadow 0.2s;
 }
+
+.event1:hover {
+  transform: scale(1.03) translateY(-4px);
+  box-shadow: 0 8px 32px rgba(44, 21, 30, 0.19), 12px 12px 0 #A06A88;
+}
+
+.event2:hover {
+  transform: scale(1.03) translateY(-4px);
+  box-shadow: 0 8px 32px rgba(44, 21, 30, 0.19), 12px 12px 0 #A06A88;
+}
+
+.event3:hover {
+  transform: scale(1.03) translateY(-4px);
+  box-shadow: 0 8px 32px rgba(44, 21, 30, 0.19), 12px 12px 0 #A06A88;
+}
+
 
 /* Slider wrapper for full-width scrolling */
 .slider-wrapper {
+  cursor:   pointer;
   display: flex;
   width: 100%; 
   height: 100%; 
