@@ -114,22 +114,22 @@ nav ul ul li a {
   font-size: 80px;
   max-width: 100%;
   font-family:  Anton SC;
-  letter-spacing:   2px;
-  word-spacing:   3px;
-  line-height:  90px;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  line-height: 90px;
 }
 .main-section .main-details .main-subtitle {
   margin-bottom: 8px;
   font-size: 17px;
-  font-family:  Carrois Gothic;
-  font-weight:  bolder;
+  font-family: Carrois Gothic;
+  font-weight: bolder;
 }
 .main-section .main-details .main-subtitle2 {
   margin-top: 15px;
   margin-bottom: 2px;
   font-size: 25px;
-  font-family:  Anton SC;
-  font-weight:  bolder;
+  font-family: Anton SC;
+  font-weight: bolder;
   letter-spacing: 2px;
 }
 
@@ -137,8 +137,7 @@ nav ul ul li a {
   margin: 24px 0 40px;
   max-width: 90%;
   font-size: 1.45rem;
-  font-family:  Roboto Condensed;
-
+  font-family: Roboto Condensed;
 }
 
 .section-content {
@@ -146,47 +145,13 @@ nav ul ul li a {
   padding: 0 20px;
 }
 
-.section-title {
-  text-align: left;
-  padding: 150px 0 5px 30px;
-  font-size: 55px;
-  word-spacing: 5px;
-  font-weight: bold;
-  font-family:  Anton SC;
-  letter-spacing:   2px;
-  word-spacing:   3px;
-  line-height:  90px;
-  color: #4B2F40;
-}
 .section-title::after {
   content: "";
   width: 120px;
   height: 5px;
   display: block;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border-radius: 5px;
-  margin-left: 100px;
+  margin: 5px auto 5px auto;
   background-color: #B8819E;
-}
-
-.subtitle {
-  text-align: left;
-  padding-left: 30px;
-  letter-spacing:   2px;
-  font-size: 35px;
-  font-weight: bold;
-  font-family: Anton SC;
-  color: #4B2F40;
-}
-.description {
-  text-align: left;
-  padding-top: 15px;
-  padding-left: 30px;
-  font-size: 25px;
-  font-family: Roboto Condensed;
-  color: #4B2F40;
-  font-weight: lighter;
 }
 
 .section-title {
@@ -201,6 +166,7 @@ nav ul ul li a {
   line-height:  90px;
   color: #4B2F40;
 }
+
 .section-title::after {
   content: "";
   width: 200px;
@@ -213,62 +179,32 @@ nav ul ul li a {
   background-color: #B8819E;
 }
 
-.subtitle {
-  text-align: center;
-  margin-top: 20px;
-  letter-spacing:   2px;
-  font-size: 35px;
-  font-weight: bold;
-  font-family: Anton SC;
-  color: #4B2F40;
-}
-
-.description {
-  text-align: center;
-  padding-top: 15px;
-  font-size: 20px;
-  font-family: Roboto Condensed;
-  color: #4B2F40;
-  font-weight: lighter;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.name {
-  margin-top: 60px;
-  text-align: center;
-  letter-spacing:   2px;
-  font-size: 30px;
-  font-weight: bold;
-  font-family: Anton SC;
-  color: #4B2F40;
-}
-
 /* Service Section Styling */
 .Service-section {
   padding: 20px 0 20px;
   background: #EADDE1;
   min-height: 100vh;
-
 }
 
 /* Grid container styling */
-.section-content {
+.Service-section .section-content {
+  justify-content: center;
   max-width: 900px;
   width: 100%;
   margin-top: 70px;
   margin-left: auto;
   margin-right: auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 400px);
   grid-template-rows: auto;
-  gap: 10px;
+  gap: 40px;
 }
 
 /* Grid item styles */
 .event1, .event2 {
   border: 4px solid #5F4253;
   background-color: #5F4253;
+  box-shadow: -2px -2px 5px 0px #45363E;
   border-radius: 8px;
   height: 23rem;
   grid-column: span 1;
@@ -281,10 +217,25 @@ nav ul ul li a {
   padding: 0;
   margin-bottom: 70px;
 
+  box-shadow: 
+    -2px -2px 5px 0px #45363E,
+    0 4px 24px rgba(44, 21, 30, 0.10), 8px 8px 0 #845C74;
+  transition: transform 0.25s cubic-bezier(.4,2,.5,1), box-shadow 0.2s;
+}
+
+.event1:hover {
+  transform: scale(1.03) translateY(-4px);
+  box-shadow: 0 8px 32px rgba(44, 21, 30, 0.19), 12px 12px 0 #A06A88;
+}
+
+.event2:hover {
+  transform: scale(1.03) translateY(-4px);
+  box-shadow: 0 8px 32px rgba(44, 21, 30, 0.19), 12px 12px 0 #A06A88;
 }
 
 /* Slider wrapper for full-width scrolling */
 .slider-wrapper {
+  cursor:   pointer;
   display: flex;
   width: 100%; 
   height: 100%; 
@@ -309,15 +260,15 @@ nav ul ul li a {
   gap: 0;
   padding: 0;
   margin: 0;
-  box-sizing: border-box; /* Prevent overflow due to padding/margin */
+  box-sizing: border-box;
 }
 
 /* Image styling */
 .Interact-image {
   flex: 0 0 100%; 
   height: 100%;/
-  object-fit: cover; /* Ensure the image fills the container without zooming */
-  scroll-snap-align: start; /* Snap to the start of each image */
+  object-fit: cover;
+  scroll-snap-align: start;
   display: block;
   margin: 0; /* Remove any default margins */
 }
