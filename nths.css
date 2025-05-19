@@ -422,10 +422,3 @@ nav ul ul li a {
   font-weight: 900;
 }
 
-#grid {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 50px;
-}
