@@ -405,7 +405,7 @@ nav ul ul li a {
 .ctso-details .section-title {
   padding: 0;
   color: #4B2F40;
-  margin-top: 0;
+  margin-top: -20px;
 }
 
 .ctso-details .description {
