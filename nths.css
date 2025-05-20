@@ -270,7 +270,7 @@ nav ul ul li a {
   font-weight: bolder;
   font-style: italic;
 }
-
+/* LifeSmarts Parallax Effect */
 .ls-section {
   min-height: 100vh;
   background-image: url("Portfolio Photos/NTHS/IMG_2268.jpeg");
@@ -305,12 +305,12 @@ nav ul ul li a {
   font-weight: bolder;
   font-style: italic;
 }
-
+/* Main LifeSmarts Section */
 .ls-image {
   margin-top:   100px;
   margin-bottom:  100px;
-  height: 40rem;
-  width: 30rem;
+  height: 38rem;
+  width: 28rem;
   border-radius: 20px;
   box-shadow:
       -5px -5px 5px 0px #C6B3BD,
@@ -320,14 +320,44 @@ nav ul ul li a {
 }
 .lifesmarts-section {
   min-height:   100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #EFE6EC;
 }
-.lifesmarts-section .lifesmarts-details .section-title {
+.lifesmarts-section-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  width: 100%;
+  max-width: 1550px;
+}
+
+.ls-image-wrapper {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.lifesmarts-details {
+  max-width: 700px;
+  color: #4B2F40;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lifesmarts-details .section-title {
   padding: 0;
   color: #4B2F40;
   margin-top:   100px;
 }
 
-.lifesmarts-section .lifesmarts-details .description {
+.lifesmarts-details .description {
   line-height: 30px;
   margin: 20px 0 30px;
   text-align: center;
