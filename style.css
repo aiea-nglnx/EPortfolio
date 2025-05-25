@@ -211,7 +211,7 @@ nav ul ul li a {
 }
 
 .about-section .contact-list .contact-link {
-  font-size: 20px;
+  font-size: 22px;
   color: #70405B;
   transition: 0.2s ease;
   margin-top: -10px;
@@ -239,6 +239,12 @@ nav ul ul li a {
 .experiences-badges img {
   height: 3.5vh;
   position: relative;
+}
+.experiences-badges img:hover {
+    transition: transform 0.2s ease;
+    transform: scale(1.1);
+
+
 }
 
 iframe {
