@@ -91,6 +91,22 @@ nav ul ul li a {
   font-family: Anton SC;
   letter-spacing: 1px;
 }
+
+nav ul ul ul {
+  border-top: none;
+}
+
+nav ul ul ul li {
+  position: relative;
+  right: 195px;
+  top: -70px;
+}
+
+span .fa-plus {
+  margin-right:   30px;
+  font-size:  18px;
+}
+
 .show, .icon, input {
   display: none;
 }
