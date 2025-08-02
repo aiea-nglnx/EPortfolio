@@ -29,7 +29,7 @@ nav .logo {
 nav ul {
   float: right;
   list-style: none;
-  margin-right: 35px;
+  margin-right: 100px;
   position: relative;
   gap: 25px;
 }
@@ -37,7 +37,7 @@ nav ul li {
   float: left;
   display: inline-block;
   background: #623950;
-  margin: 0 5px;
+  margin: 0 25px;
 }
 
 nav ul li a {
@@ -98,7 +98,7 @@ nav ul ul ul {
 
 nav ul ul ul li {
   position: relative;
-  right: 195px;
+  left: 195px;
   top: -70px;
 }
 
@@ -109,6 +109,41 @@ span .fa-plus {
 
 .show, .icon, input {
   display: none;
+}
+
+.section-content {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  padding: 55px 0 60px 30px;
+  font-size: 42px;
+  word-spacing: 5px;
+  font-weight: bold;
+  font-family: Anton SC;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  line-height: 90px;
+  color: #4B2F40;
+}
+.section-title::after {
+  content: "";
+  width: 400px;
+  height: 5px;
+  display: block;
+  margin: 5px auto 5px auto;
+  border-radius: 5px;
+  background-color: #B8819E;
+}
+
+p {
+  text-align: center;
+  font-size: 25px;
+  font-family: Roboto Condensed;
+  margin-top: -30px;
+  margin-bottom: 40px;
 }
 
 /* main Section Styling */
@@ -160,7 +195,7 @@ span .fa-plus {
 }
 .slider-track {
   display: flex;
-  margin-top: 110px;
+  margin-top: 120px;
   margin-bottom: 10px;
   margin-left: 20rem;
   display: grid;
@@ -193,6 +228,15 @@ span .fa-plus {
 }
 
 .card-content .project-type {
+  font-family: Carrois Gothic;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+  opacity: 0.84;
+}
+.card-content .project-layers {
   font-family: Carrois Gothic;
   font-size: 15px;
   font-weight: 600;
@@ -243,4 +287,24 @@ span .fa-plus {
   right: 0;
   top: -10px;
   bottom: -10px;
+}
+
+/* Map Section Styling */
+.map-section {
+  padding: 20px 0 20px;
+  background: #EADDE1;
+  min-height: 100vh;
+}
+
+.map-section-content {
+  justify-content: center;
+  width: 100%;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 570px);
+  grid-template-rows: auto;
+  gap: 40px;
+
 }
