@@ -29,7 +29,7 @@ nav .logo {
 nav ul {
   float: right;
   list-style: none;
-  margin-right: 35px;
+  margin-right: 100px;
   position: relative;
   gap: 25px;
 }
@@ -37,7 +37,7 @@ nav ul li {
   float: left;
   display: inline-block;
   background: #623950;
-  margin: 0 5px;
+  margin: 0 25px;
 }
 
 nav ul li a {
@@ -98,7 +98,7 @@ nav ul ul ul {
 
 nav ul ul ul li {
   position: relative;
-  right: 195px;
+  left: 195px;
   top: -70px;
 }
 
@@ -110,6 +110,7 @@ span .fa-plus {
 .show, .icon, input {
   display: none;
 }
+
 
 /* Experiences Sections */
 .experiences-section {
