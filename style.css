@@ -156,6 +156,29 @@ span .fa-plus {
     padding-right: 50px;
 }
 
+/* Section Header */
+.section-Header {
+  height: 10rem;
+  display: flex;
+  position: relative;
+  padding: 2rem 13vw;
+  box-shadow: 0px 1vh #78546A, 0px 2vh #5F4253;
+  z-index: 2;
+  width: 100%;
+  background-color:   #845C75;
+}
+
+.header-title {
+  font-size: 28px;
+  word-spacing: 5px;
+  font-weight: bold;
+  font-family: Anton SC;
+  letter-spacing: 2px;
+  color: #fff;
+  margin: -50px;
+
+}
+
 .section-content {
   margin: 0 auto;
   padding: 0 20px;
@@ -241,26 +264,43 @@ span .fa-plus {
 }
 
 /* Experiences Section */
-.experiences-section {
-  background-color: #E0CCD2;
-}
-.experiences-section .section-title {
-    color: #4B2F40;
-    margin-bottom: 60px;
+.exp-Header {
+  height: 6rem;
+  display: flex;
+  position: relative;
+  padding: 2rem 13vw;
+  box-shadow: 0px 1vh #78546A, 0px 2vh #5F4253;
+  z-index: 2;
+  width: 100%;
+  background-color:   #845C75;
 }
 
-.experiences-badges {
-  padding: 10px 0px 0px 20px;
+.exp-Header .header-title {
+  font-size: 28px;
+  word-spacing: 5px;
+  font-weight: bold;
+  font-family: Anton SC;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-top: -55px;
+
+}
+
+.experiences-section {
+  padding: 60px 0;
+  min-height: 38vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #E0CCD2;
 }
 .experiences-badges img {
-  height: 3.5vh;
+  height: 45px;
   position: relative;
 }
 .experiences-badges img:hover {
     transition: transform 0.2s ease;
     transform: scale(1.1);
-
-
 }
 
 iframe {
@@ -270,13 +310,36 @@ iframe {
 }
 
 /* Personal Statement */
-.statement-section {
-  background-color: #5F4253;
+.statement-Header {
+  height: 6rem;
+  display: flex;
+  position: relative;
+  padding: 2rem 13vw;
+  box-shadow: 0px 1vh #78546A, 0px 2vh #5F4253;
+  z-index: 2;
+  width: 100%;
+  background-color:   #845C75;
 }
 
-.statement-section .section-title {
-  color: #EFE6EC;
-  margin-bottom: 25px;
+.statement-Header .header-title {
+  font-size: 28px;
+  word-spacing: 5px;
+  font-weight: bold;
+  font-family: Anton SC;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-top: -55px;
+
+}
+
+.statement-section {
+  background-color: #5F4253;
+  padding: 60px 0;
+  min-height: 38vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .statement-section .statement-details .text1 {
@@ -293,22 +356,19 @@ iframe {
   font-size: 20px;
   font-family: Roboto Condensed;
   padding-top:  35px;
-  padding-bottom:  60px;
   color: #EFE6EC;
-
 }
 
 /* Goals Section Styling */
 .goals-section {
-  padding: 50px 0 20px;
+  padding: 60px 0;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.goals-section .section-title {
-  margin-top: -40px;
-  margin-bottom:  50px;
-  color: #4B2F40;
-}
 .goals-section .goal-details {
   display: flex;
   flex-wrap: wrap;
@@ -318,23 +378,24 @@ iframe {
   color: #4B2F40;
 }
 .goals-section .goal-details .goal-embed {
+  justify-content:  center;
+  margin-right:   auto;
+  margin-left:  auto;
   display: flex;
   align-items: center;
   text-align: center;
   flex-direction: column;
-  justify-content: space-between;
 }
 .goals-section .goal-details .goal-embed iframe {
   aspect-ratio: 1;
-  margin-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
   object-fit: contain;
 }
 
 .goals-section .goal-details .goal-embed .section-subtitle {
-  font-size: 22px;
-  margin-top: -40px;
+  font-size: 27px;
+  margin-top:   40px;
   margin-bottom: 60px;
   text-align: center;
   font-family: Anton SC;
@@ -345,15 +406,20 @@ iframe {
 /* Resume Section Styling */
 .resume-section {
   background-color: #5F4253;
+  padding: 60px 0;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.resume-section .section-title {
-  color: #EFE6EC;
-  margin-bottom:  20px;
-}
-
-.resume-section, .section-content, .resume-details, .resume-embed {
+.resume-embed {
+    justify-content:  center;
+    margin-right:   auto;
+    margin-left:  auto;
+    align-items: center;
+    text-align: center;
     display: block;
     width: 100%;
     height: auto;
@@ -362,6 +428,7 @@ iframe {
 .resume-embed iframe {
     width: 1200px;
     height: 700px;
+    margin-top:  20px;
 }
 
 
