@@ -234,24 +234,49 @@ span .fa-plus {
   color: #4B2F40;
 }
 
+.section-Header {
+  height: 12.5rem;
+  display: flex;
+  position: relative;
+  padding: 2rem 13vw;
+  box-shadow: 0px 1vh #78546A, 0px 2vh #5F4253;
+  z-index: 2;
+  width: 100%;
+  background-color:   #845C75;
+}
+
+.title {
+  font-size: 25px;
+  word-spacing: 5px;
+  font-weight: bold;
+  font-family: Anton SC;
+  letter-spacing: 2px;
+  color: #fff;
+  margin: -20px;
+
+}
+
 /* Service Section Styling */
 .Service-section {
-  padding: 20px 0 20px;
+  padding: 60px 0;
   background: #EADDE1;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .section-content {
-  justify-content: center;
   width: 100%;
-  margin-top: 5px;
   margin-left: auto;
   margin-right: auto;
   display: grid;
   grid-template-columns: repeat(2, 570px);
   grid-template-rows: auto;
   gap: 40px;
-
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 /* Grid item styles */
@@ -269,7 +294,7 @@ span .fa-plus {
   justify-content: flex-start;
   align-items: stretch;
   padding: 0;
-  margin-bottom: -20px;
+
 
   box-shadow: 
     -2px -2px 5px 0px #45363E,
