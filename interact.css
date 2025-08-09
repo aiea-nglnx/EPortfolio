@@ -171,50 +171,50 @@ span .fa-plus {
   background-color: #B8819E;
 }
 
-.section-title {
-  text-align: center;
-  padding: 55px 0 5px 30px;
-  font-size: 55px;
-  word-spacing: 5px;
-  font-weight: bold;
-  font-family:  Anton SC;
-  letter-spacing:   2px;
-  word-spacing:   3px;
-  line-height:  90px;
-  color: #4B2F40;
-}
-
-.section-title::after {
-  content: "";
-  width: 200px;
-  height: 5px;
-  display: block;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border-radius: 5px;
-  margin-left: 35rem;
-  background-color: #B8819E;
-}
-
 /* Service Section Styling */
 .Service-section {
-  padding: 20px 0 20px;
+   padding: 60px 0;
   background: #EADDE1;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.section-Header {
+  height: 11rem;
+  display: flex;
+  position: relative;
+  padding: 2rem 13vw;
+  box-shadow: 0px 1vh #78546A, 0px 2vh #5F4253;
+  z-index: 2;
+  width: 100%;
+  background-color:   #845C75;
+}
+
+.title {
+  font-size: 28px;
+  word-spacing: 5px;
+  font-weight: bold;
+  font-family: Anton SC;
+  letter-spacing: 2px;
+  color: #fff;
+  margin: -40px;
+
 }
 
 /* Grid container styling */
 .Service-section .section-content {
   justify-content: center;
-  max-width: 900px;
   width: 100%;
-  margin-top: 70px;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   display: grid;
-  grid-template-columns: repeat(2, 400px);
+  grid-template-columns: repeat(2, 540px);
   grid-template-rows: auto;
-  gap: 40px;
+  gap: 70px;
 }
 
 /* Grid item styles */
@@ -223,7 +223,7 @@ span .fa-plus {
   background-color: #5F4253;
   box-shadow: -2px -2px 5px 0px #45363E;
   border-radius: 8px;
-  height: 23rem;
+  height: 31rem;
   grid-column: span 1;
   overflow: hidden;
   position: relative;
@@ -232,7 +232,6 @@ span .fa-plus {
   justify-content: flex-start;
   align-items: stretch;
   padding: 0;
-  margin-bottom: 70px;
 
   box-shadow: 
     -2px -2px 5px 0px #45363E,
@@ -283,11 +282,16 @@ span .fa-plus {
 /* Image styling */
 .Interact-image {
   flex: 0 0 100%; 
-  height: 100%;/
+  height: 100%;
+  width:  100%;
   object-fit: cover;
   scroll-snap-align: start;
   display: block;
   margin: 0; /* Remove any default margins */
+  border: 3px solid #5F4253;
+  border-radius: 8px;
+
+
 }
 /* Event text styling */
 .event-name {
