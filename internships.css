@@ -156,6 +156,28 @@ span .fa-plus {
 
 }
 
+.section-Header {
+  height: 14rem;
+  display: flex;
+  position: relative;
+  padding: 2rem 13vw;
+  box-shadow: 0px 1vh #78546A, 0px 2vh #5F4253;
+  z-index: 2;
+  width: 100%;
+  background-color:   #845C75;
+}
+
+.title {
+  font-size: 28px;
+  word-spacing: 5px;
+  font-weight: bold;
+  font-family: Anton SC;
+  letter-spacing: 2px;
+  color: #fff;
+  margin: -20px;
+
+}
+
 .section-content {
   margin: 0 auto;
   padding: 0 20px;
@@ -168,7 +190,6 @@ span .fa-plus {
   word-spacing: 5px;
   font-weight: bold;
   font-family: Anton SC;
-  letter-spacing: 2px;
   word-spacing: 3px;
   line-height: 90px;
   color: #4B2F40;
@@ -302,6 +323,7 @@ span .fa-plus {
   justify-content: flex-start;
   align-items: stretch;
   padding: 0;
+  margin-top: 135px;
   margin-bottom: -20px;
 
   box-shadow: 
