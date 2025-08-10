@@ -307,7 +307,9 @@ p {
   letter-spacing: 2px;
   color: #fff;
   margin: -20px;
-
+}
+.title h3 {
+  margin-top:   5px;
 }
 
 /* Map Section Styling */
