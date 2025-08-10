@@ -5,8 +5,8 @@ window.onload = function () {
   const designWordEl = document.getElementById("design-word");
   const craftWordEl = document.getElementById("craft-word");
 
-  const designWords = ["Empathy", "Optimization", "Accessibility", "Purpose", "Identity", "Flow", "Wonder"];
-  const craftWords = ["Interfaces", "Experiences", "Journeys", "Maps", "Meaning"];
+  const designWords = ["Empathy", "Optimization", "Accessibility", "Purpose", "Identity", "Flow", "Wonder", "Clarity"];
+  const craftWords = ["Interfaces", "Experiences", "Journeys", "Maps", "Meaning", "Narratives", "Possibility"];
   
   let designIndex = 0;
   let craftIndex = 0;
