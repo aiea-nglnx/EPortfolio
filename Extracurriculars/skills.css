@@ -117,7 +117,7 @@ span .fa-plus {
   min-height: 100vh;
   background-color: #EFE6EC;
   width: 100%;
-  background-image: url("Portfolio Photos/SkillsUSA/IMG_2273.jpeg");
+  background-image: url("SkillsUSA/IMG_2273.jpeg");
   background-size: cover;
   background-position: 50% 20%;
   background-repeat:  no-repeat;
@@ -365,7 +365,7 @@ span .fa-plus {
 /* CTSO1 Section Styling */
 .ctso1-section {
   min-height: 100vh;
-  background-image: url("Portfolio Photos/SkillsUSA/IMG_2272.jpeg");
+  background-image: url("SkillsUSA/IMG_2272.jpeg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
