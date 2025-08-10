@@ -158,6 +158,15 @@ span .fa-plus {
     padding-right: 50px;
 }
 
+.portfolio-section .portfolio-image-wrapper img{
+  transition:   transform 0.3s ease;
+}
+
+.portfolio-image-wrapper img:hover {
+  transform: scale(1.05) rotate(-2deg);
+}
+
+
 .portfolio-section .portfolio-details .tagline {
   margin-top: 30px;
   font-size: 2rem;
@@ -167,9 +176,12 @@ span .fa-plus {
 }
 
 #design-word, #craft-word {
-  color: #B8819E;
   font-family: Anton SC;
   letter-spacing:  1.8px;
+  background: linear-gradient(90deg, #B8819E 0%, #C6A4D4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 8s ease infinite;
 }
 
 /* Section Header */
