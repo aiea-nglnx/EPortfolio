@@ -134,16 +134,18 @@ span .fa-plus {
   letter-spacing:   2px;
   word-spacing:   3px;
   line-height:  90px;
+  font-weight:  bolder;
 }
 .portfolio-section .portfolio-details .subtitle {
-  margin-bottom: 8px;
+  margin-top: 5rem;
+  margin-bottom: 10px;
   font-size: 17px;
   font-family:  Carrois Gothic;
   font-weight:  bolder;
 }
 
 .portfolio-section .portfolio-details .description {
-  margin: 24px 0 40px;
+  margin: 30px 0 40px;
   max-width: 100%;
   font-size: 1.45rem;
   font-family:  Roboto Condensed;
@@ -154,6 +156,20 @@ span .fa-plus {
     max-width: 100%;
     padding-top:  50px;
     padding-right: 50px;
+}
+
+.portfolio-section .portfolio-details .tagline {
+  margin-top: 30px;
+  font-size: 2rem;
+  font-family:  Roboto Condensed;
+  font-weight:  bolder;
+  letter-spacing:  1px;
+}
+
+#design-word, #craft-word {
+  color: #B8819E;
+  font-family: Anton SC;
+  letter-spacing:  1.8px;
 }
 
 /* Section Header */
