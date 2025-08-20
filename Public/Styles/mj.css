@@ -361,3 +361,10 @@ p {
   text-shadow: 4px 0px 12px #6E5E61;
 
 }
+
+#map {
+  width: 1200px;
+  height: 100vh;
+  position:   relative;
+  z-index:  1;
+}
