@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background: #EFE6EC;
+}
+nav {
+  background: #623950;
+  box-shadow: 2px 0.2px 10px #58374A;
+  position: fixed;
+  width: 100%;
+  z-index: 5;  
+}
+nav:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+nav .logo {
+  float: left;
+  font-size: 30px;
+   font-weight: bold;
+  line-height: 70px;
+  padding-left: 35px;
+}
+nav ul {
+  float: right;
+  list-style: none;
+  margin-right: 100px;
+  position: relative;
+  gap: 25px;
+}
+nav ul li {
+  float: left;
+  display: inline-block;
+  background: #623950;
+  margin: 0 25px;
+}
+
+nav ul li a {
+  color: #EFE6EC;
+  text-decoration: none;
+  line-height: 70px;
+  font-size: 20px;
+  padding: 10px 15px;
+  font-family: Anton SC;
+  letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+  color: #EFE6EC;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #DCC4D0,
+              0 0 5px #D2B2C2;
+}
+
+nav ul ul li a:hover {
+  color: #E0CCD6;
+  box-shadow: none;
+}
+
+nav ul ul {
+  position: absolute;
+  top: 90px;
+  border-top: 3px solid #B98DA4;
+  opacity: 0;
+  visibility: hidden;
+  transition: top 0.3s ease, opacity 0.3s ease;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+
+nav ul ul li {
+  position: relative;
+  margin: 0px;
+  width: 195px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul ul li a {
+  font-size: 18px;
+  line-height: 50px;
+  font-family: Anton SC;
+  letter-spacing: 1px;
+}
+
+nav ul ul ul {
+  border-top: none;
+}
+
+nav ul ul ul li {
+  position: relative;
+  left: 195px;
+  top: -70px;
+}
+
+span .fa-plus {
+  margin-right:   30px;
+  font-size:  18px;
+}
+
+.show, .icon, input {
+  display: none;
+}
+
+.section-content {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  padding: 55px 0 60px 30px;
+  font-size: 42px;
+  word-spacing: 5px;
+  font-weight: bold;
+  font-family: Anton SC;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  line-height: 90px;
+  color: #4B2F40;
+}
+.section-title::after {
+  content: "";
+  width: 400px;
+  height: 5px;
+  display: block;
+  margin: 5px auto 5px auto;
+  border-radius: 5px;
+  background-color: #B8819E;
+}
+
+p {
+  text-align: center;
+  font-size: 25px;
+  font-family: Roboto Condensed;
+  margin-top: -30px;
+  margin-bottom: 40px;
+}
+
+/* main Section Styling */
+.main-section {
+  min-height: 100vh;
+  background-color: #EFE6EC;
+}
+
+.main-section .main-section-content {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  color: #4B2F40;
+  justify-content: space-between;
+  margin-left: 120px;
+}
+
+.main-section .main-details .main-title {
+  font-size: 80px;
+  max-width: 100%;
+  font-family: Anton SC;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  line-height: 90px;
+}
+.main-section .main-details .main-subtitle {
+  margin-bottom: 8px;
+  font-size: 17px;
+  font-family: Carrois Gothic;
+  font-weight: bolder;
+}
+.main-section .main-details .main-subtitle2 {
+  margin-top: 15px;
+  margin-bottom: 2px;
+  font-size: 25px;
+  font-family: Anton SC;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+/* GIS Evidence */
+.slider {
+  overflow: hidden ;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.slider-track {
+  display: flex;
+  margin-top: 120px;
+  margin-bottom: 10px;
+  margin-left: 20rem;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(10, 1fr);
+  cursor: pointer;   
+  overflow-x: scroll; /* Enable horizontal scrolling */
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory; /* Snap to each image */
+  scrollbar-width:  none;
+}
+.slider-track .slider-card  img {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  flex: 0 0 100%; 
+  position: relative;
+  overflow: hidden;
+  scroll-snap-align: start; /* Snap to the start of each image */
+}
+
+/* Card Overlay Styling */
+
+.card-content {
+  text-align: left;
+  justify-content: relative;
+  z-index: 2;
+  font-weight: bold;
+  color: #BB8BA6;
+}
+
+.card-content .project-type {
+  font-family: Carrois Gothic;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+  opacity: 0.84;
+}
+.card-content .project-layers {
+  font-family: Carrois Gothic;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+  opacity: 0.84;
+}
+
+.card-content .project-title {
+  font-family: Anton SC;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  line-height: 1.14;
+}
+
+.slider .gis-scrollbar {
+  height: 24px;
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position:   right;
+  background: transparent;
+  margin-left: 25rem;
+}
+
+.gis-scrollbar .scrollbar-track {
+  height: 2px;
+  width: 100%;
+  background: #4B2F40;
+  position:   relative  ;
+  border-radius: 4px ;
+}
+
+.gis-scrollbar .scrollbar-thumb {
+  position:   absolute;
+  height: 100%;
+  width: 100px;
+  background:   #B8819E;
+  border-radius:  inherit;
+}
+
+.gis-scrollbar .scrollbar-thumb::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  bottom: -10px;
+}
+
+.section-Header {
+  min-height: 2rem;
+  position: relative;
+  padding: 1rem 13vw;
+  box-shadow: 0px 1vh #78546A, 0px 2vh #5F4253;
+  z-index: 2;
+  width: 100%;
+  background-color:   #845C75;
+}
+
+.title {
+  font-size: 23px;
+  word-spacing: 5px;
+  font-weight: bold;
+  font-family: Anton SC;
+  letter-spacing: 2px;
+  color: #fff;
+  margin: -20px;
+}
+.title h3 {
+  margin-top:   5px;
+}
+
+/* Map Section Styling */
+.map-section {
+  padding: 20px 0 20px;
+  background: #EADDE1;
+  min-height: 100vh;
+}
+
+.map-section-content {
+  justify-content: center;
+  width: 100%;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 570px);
+  grid-template-rows: auto;
+  gap: 40px;
+
+}
+.fireStation {
+  font-size: 28px;
+  text-align: center;
+  line-height: 32px;
+  text-shadow: 4px 0px 12px #6E5E61;
+}
+
+.fireIcon {
+  font-size: 28px;
+  text-align: center;
+  line-height: 32px;
+  text-shadow: 4px 0px 12px #6E5E61;
+
+}
+
+.carIcon {
+  font-size: 28px;
+  text-align: center;
+  line-height: 32px;
+  text-shadow: 4px 0px 12px #6E5E61;
+
+}
+
+.cacIcon {
+  font-size: 28px;
+  text-align: center;
+  line-height: 32px;
+  text-shadow: 4px 0px 12px #6E5E61;
+
+}
