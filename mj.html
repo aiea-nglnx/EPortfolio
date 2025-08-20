@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="mj.css">
-    <script src="slider.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="./Public/Styles/mj.css">
+    <script src="./scripts/slider.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,8 +14,9 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Carrois Gothic">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto Condensed">
 
-    <!-- ArcGIS Experience -->
-    <script type="module" src="https://js.arcgis.com/embeddable-components/4.33/arcgis-embeddable-components.esm.js"></script>
+    <!-- Leaflet Experience -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
 
     <!-- Linking Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -81,7 +82,7 @@
                     <div class="slider">                    
                         <div class="slider-track">
                           <div class="slider-card">
-                            <img src="Portfolio Photos/GIS/Agriculture Use.png" alt="GIS Project 1"/>
+                            <img src="./Public/Portfolio Photos/GIS/Agriculture Use.png" alt="GIS Project 1"/>
                             <div class="card-overlay">
                                 <div class="card-content">
                                     <div class="project-type">Congressional App Challenge (Fall 2024)</div>
@@ -93,7 +94,7 @@
                           </div>
 
                           <div class="slider-card">
-                            <img src="Portfolio Photos/GIS/Streams.png" alt="GIS Project 2"/>
+                            <img src="./Public/Portfolio Photos/GIS/Streams.png" alt="GIS Project 2"/>
                             <div class="card-overlay">
                                 <div class="card-content">
                                     <div class="project-type">Congressional App Challenge (Fall 2024)</div>
@@ -104,7 +105,7 @@
                           </div>
                         
                           <div class="slider-card">
-                            <img src="Portfolio Photos/GIS/Lahaina Fire Extent.png" alt="GIS Project 3"/>
+                            <img src="./Public/Portfolio Photos/GIS/Lahaina Fire Extent.png" alt="GIS Project 3"/>
                             <div class="card-overlay">
                                 <div class="card-content">
                                     <div class="project-type">Mapping Justice Summer Program (Summer 2024)</div>
@@ -115,7 +116,7 @@
                           </div>
 
                           <div class="slider-card">
-                            <img src="Portfolio Photos/GIS/Poverty in Lahaina.png" alt="GIS Project 4"/>
+                            <img src="./Public/Portfolio Photos/GIS/Poverty in Lahaina.png" alt="GIS Project 4"/>
                             <div class="card-overlay">
                                 <div class="card-content">
                                     <div class="project-type">Mapping Justice Summer Program (Summer 2024)</div>
@@ -126,7 +127,7 @@
                           </div>
 
                           <div class="slider-card">
-                            <img src="Portfolio Photos/GIS/SNAP in Lahaina.png" alt="GIS Project 5"/>
+                            <img src="./Public/Portfolio Photos/GIS/SNAP in Lahaina.png" alt="GIS Project 5"/>
                             <div class="card-overlay">
                                 <div class="card-content">
                                     <div class="project-type">Mapping Justice Summer Program (Summer 2024)</div>
@@ -137,7 +138,7 @@
                           </div>
 
                           <div class="slider-card">
-                            <img src="Portfolio Photos/GIS/Poverty Status in Maui.png" alt="GIS Project 6"/>
+                            <img src="./Public/Portfolio Photos/GIS/Poverty Status in Maui.png" alt="GIS Project 6"/>
                             <div class="card-overlay">
                                 <div class="card-content">
                                     <div class="project-type">Mapping Justice Summer Program (Summer 2024)</div>
@@ -149,7 +150,7 @@
                           </div>
 
                           <div class="slider-card">
-                            <img src="Portfolio Photos/GIS/Grocery Stores and Bus Routes.png" alt="GIS Project 7"/>
+                            <img src="./Public/Portfolio Photos/GIS/Grocery Stores and Bus Routes.png" alt="GIS Project 7"/>
                             <div class="card-overlay">
                                 <div class="card-content">
                                     <div class="project-type">Mapping Justice Summer Program (Summer 2024)</div>
@@ -160,7 +161,7 @@
                           </div>
 
                           <div class="slider-card">
-                            <img src="Portfolio Photos/GIS/Demographics in Maui.png" alt="GIS Project 8"/>
+                            <img src="./Public/Portfolio Photos/GIS/Demographics in Maui.png" alt="GIS Project 8"/>
                             <div class="card-overlay">
                                 <div class="card-content">
                                     <div class="project-type">Mapping Justice Summer Program (Summer 2024)</div>
@@ -172,7 +173,7 @@
                           </div>
 
                           <div class="slider-card">
-                            <img src="Portfolio Photos/GIS/15 min to Grocery Stores [Poverty].png" alt="GIS Project 9"/>
+                            <img src="./Public/Portfolio Photos/GIS/15 min to Grocery Stores [Poverty].png" alt="GIS Project 9"/>
                             <div class="card-overlay">
                                 <div class="card-content">
                                     <div class="project-type">Mapping Justice Summer Program (Summer 2024)</div>
@@ -184,7 +185,7 @@
                           </div>
 
                           <div class="slider-card">
-                            <img src="Portfolio Photos/GIS/15 min to Grocery Stores [Food Benefits].png" alt="GIS Project 10"/>
+                            <img src="./Public/Portfolio Photos/GIS/15 min to Grocery Stores [Food Benefits].png" alt="GIS Project 10"/>
                             <div class="card-overlay">
                                 <div class="card-content">
                                     <div class="project-type">Mapping Justice Summer Program (Summer 2024)</div>
@@ -215,11 +216,10 @@
         </section>
        <section class="map-section">
            <div class="map-section-content">
-                <!-- ArcGIS Map Component -->
 
-                <div style="text-align:center;">
-                    <arcgis-embedded-map style="height:650px;width:1190px;" item-id="e6991a63c5de4cd8be138216e19f0f7f" theme="light" share-enabled center="-157.0143751814301,21.128887503376042"scale="1155581.1085775" portal-url="https://stemworkshi.maps.arcgis.com" ></arcgis-embedded-map>
-                </div>    
+                <!-- Map Component -->
+
+                <div id="map"></div>    
             </div>
        </section>
     </main>
