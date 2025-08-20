@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="wbl.css">
+	<link rel="stylesheet" type="text/css" href="./Public/Styles/wbl.css">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,10 +43,10 @@
                     <a href="#">Extracurriculars</a>
                     <input type="checkbox" id="btn-2">
                     <ul>
-                        <li><a href="leo.html">LEO Club</a></li>
-                        <li><a href="nths.html">NTHS</a></li>
-                        <li><a href="skills.html">SkillsUSA</a></li>
-                        <li><a href="interact.html">Interact Club</a></li>
+                        <li><a href="./Extracurriculars/leo.html">LEO Club</a></li>
+                        <li><a href="./Extracurriculars/nths.html">NTHS</a></li>
+                        <li><a href="./Extracurriculars/skills.html">SkillsUSA</a></li>
+                        <li><a href="./Extracurriculars/interact.html">Interact Club</a></li>
                         <li><a href="misc.html">Miscellaneous</a></li>
                     </ul>
                 </li>
@@ -85,38 +85,123 @@
                 <div class="intern-details">
                     <div class="intern-embed">
                         <h3 class="section-subtitle">KIBO Activity Card - Shark Doo Doo</h3>
-                        <img src="Portfolio Photos/Shark.png" alt="photos" class="exp" width="600px" height="350px">
+                        <img src="./Public/Portfolio Photos/Shark.png" alt="photos" class="exp" width="600px" height="350px">
                     </div>
                     
                     <div class="intern-embed">
                         <h3 class="section-subtitle">KIBO Activity - Wheels on the Bus</h3>
-                        <img src="Portfolio Photos/Bus.png" alt="photos" class="exp" width="600px" height="350px">
+                        <img src="./Public/Portfolio Photos/Bus.png" alt="photos" class="exp" width="600px" height="350px">
                     </div>
                     
                     <div class="intern-embed">
                         <h3 class="section-subtitle">LEGO SPIKE Activity Card - Tea Cups Back </h3>
-                        <img src="Portfolio Photos/TeaCups2.png" alt="photos" class="intern" width="600px" height="350px">
+                        <img src="./Public/Portfolio Photos/TeaCups2.png" alt="photos" class="intern" width="600px" height="350px">
                     </div>
                     
                     <div class="intern-embed">
                         <h3 class="section-subtitle">LEGO SPIKE Activity Card - Tea Cups Front</h3>
-                        <img src="Portfolio Photos/TeaCups1.png" alt="photos" class="intern" width="600px" height="350px">
+                        <img src="./Public/Portfolio Photos/TeaCups1.png" alt="photos" class="intern" width="600px" height="350px">
                     </div>
                 </div>
             </div>
         </section>
+        <section class="Project-Header">
+            <!--Header-->
+            <div class="title" id="projects">
+                <br>
+                    <h1>Projects</h1>
+                    <br>
+            </div>
+        </section>
 
         <section class="Project-section">
-            <h2 class="section-title">Projects</h2>
+    
             <div class="project-section-content">
-                <div class="project-details">
-                    <div class="project-embed">
-                        <h3 class="section-subtitle">Digital Clock (01/13/2025)</h3>
-                            <iframe src="https://aiea-nglnx.github.io/DigitalClock/" width="850px" height="750px" style="border: none;"></iframe>
+                <div id="project-container">
+                    <div class="project-school" style="grid-area: first-web;">
+                        <a href="https://codepen.io/paoangel/full/QWeWQze">
+                            <div class="project-details">
+                                <h2>First Accessible Website ~ 2024</h2>
+                            </div>
+                        </a>
                     </div>
-                    <div class="project-embed">
-                        <h3 class="section-subtitle">Mondrian Project</h3>
-                            <iframe src="https://codepen.io/paoangel/full/rNXmayd" width="850px" height="750px" style="border: none;"></iframe>
+                    <div class="project-per" style="grid-area: first-game;">
+                        <a href="https://aiea-nglnx.github.io/ButtonGame/">
+                            <div class="project-details">
+                                <h2>Electric Shock | Button Game ~ 2024</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-per" style="grid-area: second-game;">
+                        <a href="https://aiea-nglnx.github.io/BallGame/">
+                            <div class="project-details">
+                                <h2>Catch Me If You Can | Ball Game ~ 2024</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-school" style="grid-area: tracker;">
+                        <a href="https://codepen.io/paoangel/pen/gbYYOev">
+                            <div class="project-details">
+                                <h2>Cookie Campaign Inventory Checker ~ 2024</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-school" id="first-logo" style="grid-area: first-logo;">
+                        <a href="https://www.figma.com/design/w2J0ZS10S4EFWkiDF9Mn7s/Logo--Culinary-s-Seasonal-Munchies-?node-id=0-1">
+                            <div class="project-details">
+                                <h2>Culinary's Seasonal Munchies ~ 2024</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-school" id="sec-logo" style="grid-area: second-logo;">
+                        <a href="https://www.figma.com/design/ooPHb13bBcwTnTtVFjFlBq/Logos?node-id=0-1">
+                            <div class="project-details">
+                                <h2>Bah Humbug Cookies ~ 2024</h2>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="project-school" style="grid-area: clock;">
+                        <a href="https://aiea-nglnx.github.io/DigitalClock/">
+                            <div class="project-details">
+                                <h2>Digital Clock ~ 2024</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-school" id="challenge" style="grid-area: genki;">
+                        <a href="">
+                            <div class="project-details">
+                                <h2>Congressional App Challenge ~ 2024</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-school" style="grid-area: vm;">
+                        <a href="https://github.com/aiea-nglnx/VendingMachine.git">
+                            <div class="project-details">
+                                <h2>Vending Machine ~ 2025</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-school" style="grid-area: playlist;">
+                        <a href="https://github.com/aiea-nglnx/JavaPlaylist.git">
+                            <div class="project-details">
+                                <h2>Playlist ~ 2025</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-per" id="java" style="grid-area: coffee;">
+                        <a href="https://github.com/aiea-nglnx/CoffeeShop.git">
+                            <div class="project-details">
+                                <h2>Coffee Shop ~ 2025</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-gis" style="grid-area: ;">
+                        <a href="">
+                            <div class="project-details">
+                                <h2></h2>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
